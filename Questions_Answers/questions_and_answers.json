@@ -6,11 +6,13 @@
       "answer_blocks": [
         {
           "type": "text",
-          "content": "A Service runs on the main thread of the application. If long operations are performed, the UI may freeze."
+          "content": "A Service runs on the main thread of the application. If long operations are performed, the UI may freeze.
+          The primary difference between an Android Service and an IntentService is how they handle multithreading and manage their own lifecycle. A standard Service runs on the application's main thread and requires manual thread management, while an IntentService uses a dedicated worker thread and automatically handles its own stopping. 
+*Note: IntentService was deprecated in API level 30 (Android 11). For new apps, modern alternatives like WorkManager or JobIntentService are recommended, as they handle background tasks more efficiently and are compatible with the latest system restrictions. "
         },
         {
-          "type": "image",
-          "content": "https://raw.githubusercontent.com/YOUR_USERNAME/android-interview-questions/main/images/services/service_vs_intentservice.png"
+          "type": "images",
+          "content": "https://raw.githubusercontent.com/Ravivarma14/Android_Interview_Questions/main/Images/services/service_types.png"
         },
         {
           "type": "text",
@@ -30,7 +32,7 @@
         },
         {
           "type": "image",
-          "content": "https://raw.githubusercontent.com/YOUR_USERNAME/android-interview-questions/main/images/multithreading/handler_flow.png"
+          "content": "https://raw.githubusercontent.com/Ravivarma14/Android_Interview_Questions/main/Images/services/service_types.png"
         },
         {
           "type": "text",
@@ -56,3 +58,4 @@
     }
   ]
 }
+
