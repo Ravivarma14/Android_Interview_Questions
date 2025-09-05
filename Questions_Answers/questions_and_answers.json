@@ -1,0 +1,58 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "question": "What is the difference between Service and IntentService?",
+      "answer_blocks": [
+        {
+          "type": "text",
+          "content": "A Service runs on the main thread of the application. If long operations are performed, the UI may freeze."
+        },
+        {
+          "type": "image",
+          "content": "https://raw.githubusercontent.com/YOUR_USERNAME/android-interview-questions/main/images/services/service_vs_intentservice.png"
+        },
+        {
+          "type": "text",
+          "content": "An IntentService, however, creates a background worker thread to handle all tasks sequentially, preventing UI blocking."
+        }
+      ]
+    }
+  ],
+  "multithreading": [
+    {
+      "id": 2,
+      "question": "What is a Handler in Android?",
+      "answer_blocks": [
+        {
+          "type": "text",
+          "content": "Handler allows communication between background threads and the main UI thread."
+        },
+        {
+          "type": "image",
+          "content": "https://raw.githubusercontent.com/YOUR_USERNAME/android-interview-questions/main/images/multithreading/handler_flow.png"
+        },
+        {
+          "type": "text",
+          "content": "It posts messages and runnables to the MessageQueue, which the Looper executes on the target thread."
+        }
+      ]
+    }
+  ],
+  "broadcast": [
+    {
+      "id": 3,
+      "question": "What is a BroadcastReceiver in Android?",
+      "answer_blocks": [
+        {
+          "type": "text",
+          "content": "BroadcastReceiver is a component that responds to system-wide broadcast announcements."
+        },
+        {
+          "type": "text",
+          "content": "For example, when battery is low or WiFi state changes, Android sends broadcasts which can be received by apps."
+        }
+      ]
+    }
+  ]
+}
